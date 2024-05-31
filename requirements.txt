@@ -1,0 +1,10 @@
+--extra-index-url https://download.pytorch.org/whl/rocm5.6
+torch==2.2.0 
+--extra-index-url https://download.pytorch.org/whl/rocm5.6
+torchvision==0.17.0 
+--extra-index-url https://download.pytorch.org/whl/rocm5.6
+torchaudio==2.2.0 
+--extra-index-url https://download.pytorch.org/whl/rocm5.6
+numpy==1.26.3
+
+
