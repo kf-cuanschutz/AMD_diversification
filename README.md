@@ -3,7 +3,7 @@ The scripts associated with this repository will allow you to adapt your pytorch
 
 Please follow the recommendation below in order to adapt your NVIDIA pytorch pipeline into AMD
 
-ROCM adaptation steps on Alpine on Alpine:
+ROCM adaptation steps on Alpine:
 =========================================================
 
 1) Access an AMD debug partition GPU partition on Alpine and clone the repository
