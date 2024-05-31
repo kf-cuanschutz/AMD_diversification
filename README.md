@@ -9,7 +9,7 @@ ROCM adaptation steps on Alpine on Alpine:
 1) Access an AMD debug partition GPU partition on Alpine and clone the repository
 
 ```bash
-sinteractive --partition=atesting_mi100 --qos=testing --time=00:05:00 --gres=gpu:1 --ntasks=6
+sinteractive --partition=atesting_mi100 --qos=testing --time=01:00:00 --gres=gpu:1 --ntasks=6
 cd /projects/$USER/software
 git clone https://github.com/kf-cuanschutz/AMD_diversification.git
 cd AMD_diversification
