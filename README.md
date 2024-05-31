@@ -13,13 +13,14 @@ sinteractive --partition=atesting_mi100 --qos=testing --time=00:05:00 --gres=gpu
 cd /projects/$USER/software
 git clone https://github.com/kf-cuanschutz/AMD_diversification.git
 cd AMD_diversification
+```
 
 2) Make sure that you are included in  the video group. If that is not the case please email hpcsupport@cuanschutz.edu to get added
 
 ```bash
 groups | grep video
-
 ```
+
 3) Make the install script executable and run it
 
 ```bash
