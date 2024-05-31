@@ -43,3 +43,9 @@ True
 >>>import matplotlib
 >>>import seaborn
 ```
+5) Make sure to exact the GPU debug partition if you have nothing else to test
+```python
+exit
+```
+
+
