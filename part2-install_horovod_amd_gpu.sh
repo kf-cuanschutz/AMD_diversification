@@ -93,11 +93,6 @@ echo "*************Installing Horovod ******************"
 module list
 
 export HSA_FORCE_FINE_GRAIN_PCIE=1 
-
-#__HIP_PLATFORM_AMD__=1  HOROVOD_CPU_OPERATIONS=MPI PYTORCH_ROCM_ARCH="gfx908" AMDGPU_TARGETS="gfx908" GFX_ARCH="gfx908" HAVE_GPU=1 \
-#       	HOROVOD_WITH_PYTORCH=1 HAVE_ROCM=1 Pytorch_ROCM=1 HOROVOD_GPU_OPERATIONS=NCCL HOROVOD_GPU=ROCM HOROVOD_ROCM_HOME=$ROCM_PATH HOROVOD_WITH_MPI=1 \
-#	pip install --no-cache-dir  --target=$PIP_INSTALL_DIR  -v git+https://github.com/horovod/horovod.git@refs/pull/3588/head --upgrade >& make_horovod_update_V9.log &
-
 export HSA_OVERRIDE_GFX_VERSION=9.0.8
 export SDL_GFX_LIBRARIES=/curc/sw/install/rocm/5.6.0/lib/rocblas/library/Kernels.so-000-gfx908-xnack-.hsaco
 #export SDL_GFX_LIBRARIES=$SDL_GFX_LIBRARIES:/curc/sw/install/rocm/5.6.0/rdc/lib/hsaco/gfx908/gpuReadWrite_kernels.hsaco:/curc/sw/install/rocm/5.6.0/rdc/lib/hsaco/gfx908/gpuReadWrite_kernels.hs
@@ -114,7 +109,7 @@ AMDGPU_TARGETS="gfx908" GFX_ARCH="gfx908" HAVE_GPU=1  HOROVOD_WITH_PYTORCH=1 HAV
 HOROVOD_GPU_ALLREDUCE=NCCL  HOROVOD_GPU=ROCM HOROVOD_ROCM_HOME=$ROCM_PATH HOROVOD_WITH_MPI=1 \
 pip install --no-cache-dir  --target=$PIP_INSTALL_DIR   -v git+https://github.com/thomas-bouvier/horovod.git@compile-cpp17 --upgrade >& make_horovod_update_V20_.log &
 
-#  --target=$PIP_INSTALL_DIR  -v git+https://github.com/horovod/horovod.git@refs/pull/3588/head --upgrade
+# Very helpful link from here: https://github.com/horovod/horovod/issues/4014
 
 #Exporting the install directory
 export PATH=$PATH:$HOROVOD_CMAKE_INSTALL_PREFIX/bin
