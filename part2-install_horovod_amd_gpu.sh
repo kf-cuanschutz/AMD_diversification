@@ -20,17 +20,10 @@ export PIP_CACHE_DIR=$TMP
 export PIP_INSTALL_DIR=${PWD}
 export PYTHONPATH=$PYTHONPATH:$PIP_INSTALL_DIR
 
-# Installing packages based on requirement file
-python -m pip install -r requirements.txt --target=$PIP_INSTALL_DIR
-python -m pip install -r requirements_2.txt --target=$PIP_INSTALL_DIR
-
-# Installing scikit-learn
-python3 -m venv sklearn-env
-source sklearn-env/bin/activate
-pip3 install -U scikit-learn
-
+# Scikit-learn ENV
+#source sklearn-env/bin/activate
 # Deactivate the virtual ENV
-deactivate
+#deactivate
 
 # We export all the ROCM related path and libraries
 export ROCM_PATH=/curc/sw/install/rocm/5.6.0
