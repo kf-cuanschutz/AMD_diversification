@@ -100,7 +100,7 @@ __HIP_PLATFORM_AMD__=1  HOROVOD_CPU_OPERATIONS=MPI PYTORCH_ROCM_ARCH="gfx908" \
 AMDGPU_TARGET="gfx908" \
 AMDGPU_TARGETS="gfx908" GFX_ARCH="gfx908" HAVE_GPU=1  HOROVOD_WITH_PYTORCH=1 HAVE_ROCM=1 Pytorch_ROCM=1 \
 HOROVOD_GPU_ALLREDUCE=NCCL  HOROVOD_GPU=ROCM HOROVOD_ROCM_HOME=$ROCM_PATH HOROVOD_WITH_MPI=1 \
-pip install --no-cache-dir  --target=$PIP_INSTALL_DIR   -v git+https://github.com/thomas-bouvier/horovod.git@compile-cpp17 --upgrade >& make_horovod_update_V20_.log &
+pip install --no-cache-dir  --target=$PIP_INSTALL_DIR   -v git+https://github.com/thomas-bouvier/horovod.git@compile-cpp17 --upgrade 
 
 # Very helpful link from here: https://github.com/horovod/horovod/issues/4014
 
