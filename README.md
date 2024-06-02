@@ -54,13 +54,17 @@ Horovod compatible installation on Alpine:
 1) To install Horovod, simply run the following: 
 
 ```bash
+sinteractive --partition=atesting_mi100 --qos=testing --time=01:00:00 --gres=gpu:1 --ntasks=6
 chmod +x part2-install_horovod_amd_gpu.sh
 source part2-install_horovod_amd_gpu.sh
+exit
 ```
 
 2) To test it you may use one of the example from [here](https://github.com/horovod/horovod/tree/master/examples/pytorch). For example to run Horovod on 2 GPUs on using the pytorch mnist example, one will run the following:
 ```bash
+sinteractive --partition=atesting_mi100 --qos=testing --time=01:00:00 --gres=gpu:2 --ntasks=10
 horovodrun -np 2 -H localhost:2 python pytorch_mnist.py
+exit
 ```
 
 For more information about Horovod in general please refer to our Horovod [workshop](https://github.com/kf-cuanschutz/CU-Anschutz-HPC-documentation/blob/main/Workshops/Introduction_to_Horovod_102423_part1_official_v2.pdf)
