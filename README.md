@@ -71,7 +71,7 @@ horovodrun -np 2 -H localhost:2 python pytorch_mnist.py
 exit
 ```
 
-For more information about Horovod in general please refer to our Horovod [workshop](https://github.com/kf-cuanschutz/CU-Anschutz-HPC-documentation/blob/main/Workshops/Introduction_to_Horovod_102423_part1_official_v2.pdf)
+For more information about Horovod in general please refer to our Horovod [workshop](https://github.com/kf-cuanschutz/CU-Anschutz-HPC-documentation/blob/main/Workshops/Introduction_to_Horovod_102423_part1_official_v2.pdf). For more information on AMD gpus in general please refer to this workshop [instead](https://github.com/kf-cuanschutz/CU-Anschutz-HPC-documentation/blob/main/Workshops/Introduction_to_AMD_GPU_computing_022924_v3.pdf).
 Finally, If you have any question, please email us at hpcsupport@cuanschutz.edu. 
 
 
