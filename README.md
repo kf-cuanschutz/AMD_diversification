@@ -30,6 +30,10 @@ source install_file.sh
 
 4) Verify that everything is working and that you have access to an AMD GPU with the following
 
+```bash
+python
+```
+
 ```python
 >>>import torch
 >>>print(torch.cuda.is_available())
